@@ -1,14 +1,10 @@
-(function () {
-    'use strict';
-
-    // Map chứa danh sách các banner: [Tên Class, Link Image]
+window.initBannerStyle = function () {
     const bannerMap = new Map([
         [
             'banner-Spiders-Ryoshu',
             'https://media.tenor.com/aURtRU34d5EAAAAj/valencina-house-of-spiders.gif'
         ],
-        // Thêm banner mới ở đây:
-        // ['banner-Ten-Khac', 'https://link-anh.gif'],
+        // Thêm banner khác ở đây nếu cần
     ]);
 
     function generateBannerCSS(className, imageUrl) {
@@ -16,10 +12,8 @@
             .user-name:has(.${className})::after {
                 content: '';
                 position: absolute;
-                top: 0;
-                right: 0;
-                width: 35%;
-                height: 100%;
+                top: 0; right: 0;
+                width: 35%; height: 100%;
                 background: url('${imageUrl}') no-repeat right center;
                 background-size: cover;
                 opacity: 0.9;
@@ -42,4 +36,4 @@
     const styleElement = document.createElement('style');
     styleElement.textContent = combinedCSS;
     document.head.appendChild(styleElement);
-})();
+};
