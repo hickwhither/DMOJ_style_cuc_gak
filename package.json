@@ -1,0 +1,23 @@
+{
+  "name": "dmoj_style_cuc_gak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/index.js --bundle --outfile=dist/bundle.js --minify --target=es2020"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hickwhither/DMOJ_style_cuc_gak.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hickwhither/DMOJ_style_cuc_gak/issues"
+  },
+  "homepage": "https://github.com/hickwhither/DMOJ_style_cuc_gak#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
