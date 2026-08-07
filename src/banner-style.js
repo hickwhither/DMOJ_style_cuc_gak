@@ -10,7 +10,7 @@ export function initBannerStyle() {
         ],
         [
             'banner-DonquixoteSheep',
-            'https://raw.githubusercontent.com/hickwhither/DMOJ_style_cuc_gak/master/public/DonquixoteSheep.gif'
+            'https://raw.githubusercontent.com/hickwhither/DMOJ_style_cuc_gak/master/public/DonquixoteSheepRepeat.gif'
         ]
     ]);
 
