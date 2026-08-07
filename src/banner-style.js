@@ -1,16 +1,16 @@
 export function initBannerStyle() {
     const bannerMap = new Map([
         [
-            'banner-Spiders-Ryoshu',
-            'https://media.tenor.com/aURtRU34d5EAAAAj/valencina-house-of-spiders.gif'
-        ],
-        [
             'banner-Hololive',
             'https://5987e038-eec4-453b-939f-2c0c63b0e9d6.cktoj.com/martor/0d5483dc-391c-46a4-bb8c-ac35fca7e091.png'
         ],
         [
-            'banner-DonQuixote-Sheep',
-            'https://raw.githubusercontent.com/hickwhither/DMOJ_style_cuc_gak/master/public/don_quixote_sheep.gif'
+            'banner-RyoshuSpiders',
+            'https://raw.githubusercontent.com/hickwhither/DMOJ_style_cuc_gak/master/public/RyoshuSpiders.gif'
+        ],
+        [
+            'banner-DonquixoteSheep',
+            'https://raw.githubusercontent.com/hickwhither/DMOJ_style_cuc_gak/master/public/DonquixoteSheep.gif'
         ]
     ]);
 
