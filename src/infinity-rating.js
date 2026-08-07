@@ -32,15 +32,28 @@ export function initInfinityRating() {
                 span.textContent = "∞";
             }
             span.classList.add("infinity-rating");
-
             const prev = span.previousElementSibling;
             if (prev?.matches("svg.rate-box")) prev.remove();
-
             const next = span.nextElementSibling;
             if (next?.matches("svg.rate-box")) next.remove();
         });
     }
 
     updateInfinity();
-    setInterval(updateInfinity, 500);
+
+    // Theo dõi sự thay đổi của DOM thay vì dùng setInterval
+    const observer = new MutationObserver((mutations) => {
+        observer.disconnect();
+        updateInfinity();
+        startObserving();
+    });
+
+    function startObserving() {
+        observer.observe(document.documentElement, {
+            childList: true,    // Lắng nghe khi phần tử mới được thêm/bớt
+            subtree: true       // Lắng nghe ở toàn bộ cây DOM con
+        });
+    }
+
+    startObserving();
 }
